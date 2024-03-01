@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+      *{
+        margin: 0px;
+        padding 0px;
+        text-decoration: none;
+      }
+      body{
+        background: url('BG.jpeg');
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+      }
+      .container{
+        backdrop-filter:blur(20px);
+        border: 2px solid white;
+        width: 750px;
+        height: 1300px;
+        position: relative;        
+      }
+      .container h1{
+        font-size: 50px;
+        margin: 20px;
+        text-align:left;
+      }
+      .container .input-box{
+        position: relative;
+        width: 70%;
+        height: 100px;
+        background: pink;
+        margin: 20px;
+      }
+      .input-box input{
+        width:100%;
+        height: 100px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .input-box select{
+        width:100%;
+        height: 100px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .input-box textarea{
+        border-radius:10px;
+        width:100%;
+        height:500px;
+        font-size:25px;
+        font-weight: bold;
+      }
+      .container .btn{
+        width:300px;
+        height:50px;
+        font-size: 30px;
+        margin: 20px;
+        font-weight: bold;
+        color: black;
+        background: white;
+        border-radius: 10px;
+        border: 2px solid pink;
+        left:0;
+        right:0;
+        bottom:0;
+        position: absolute;
+        cursor: pointer;
+        
+      }
+      .container .btn2{
+        width:300px;
+        height:50px;
+        font-size: 30px;
+        margin: 20px;
+        font-weight: bold;
+        color: black;
+        background: white;
+        border-radius: 10px;
+        border: 2px solid pink;
+        left:2;
+        right:0;
+        bottom:0;
+        position:absolute;
+        cursor: pointer;
+      }
+      .container .btn:hover{
+        background:black;
+        color: white;
+      }
+      .container .btn2:hover{
+        color: white;
+        background:black;
+      }
+      .container a{
+        color:black;
+      }
+      .container p{
+        color: black;
+        font-weight: bold;
+        font-size: 22px;
+        bottom: 0;
+        left: -80px;
+        right: 0;
+        margin: 100px;
+        text-align: left;
+        position: absolute;
+      }
+  .input-box i{
+    position: absolute;
+    right: -70px;
+    top: 30%;
+    font-size: 40px;
+  }
+  </style>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' rel='stylesheet'>
+</head>
+<Body>
+  <div class="container">
+    <h1>CONTACT FORM</h1>
+    <form action="https://formspree.io/f/mnqevlqd" method="POST">
+      <div class="input-box">
+      <input type="text" name="Name" placeholder="Full Name" required>
+      <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="input-box">
+      <input type="address" name="Address" placeholder="Address" required>
+      <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div class="input-box">
+      <input type="number" maxlength="11" name="PhoneNumber" placeholder="Phone Number" required>
+      <i class="fa-solid fa-phone"></i>
+      </div>
+      <div class="input-box">
+        <select name="Clothes Choose"required>
+          <option disabled selected value="">Choose Clothes</option>
+          <option value="Swim Wear A">Swim Wear A</option>
+          <option value="Swim Wear B">Swim Wear B</option>
+          <option value="Swim Wear C">Swim Wear C</option>
+          <option value="Swim Wear D">Swim Wear D</option>
+          <option value="Swim Wear E">Swim Wear E</option>
+          <option value="Swim Wear F">Swim Wear F</option>
+          <option value="Swim Wear G">Swim Wear G</option>
+          <option value="Swim Wear H">Swim Wear H</option>
+          <option value="Swim Wear I">Swim Wear I</option>
+          <option value="Swim Wear J">Swim Wear J</option>
+          <option value="Swim Wear K">Swim Wear K</option>
+          <option value="Swim Wear L">Swim Wear L</option>
+          <option value="Swim Wear X">Swim Wear X</option>
+          <option value="Swim Wear N">Swim Wear N</option>
+          <option value="Swim Wear O">Swim Wear O</option>
+          <option value="Swim Wear P">Swim Wear P</option>
+          <option value="Swim Wear Q">Swim Wear Q</option>
+          <option value="Swim Wear R">Swim Wear R</option>
+        </select><i class="fa-solid fa-shirt"></i>
+      </div>
+      <div class="input-box">
+      <textarea name="Message" placeholder="Message" required></textarea><i class="fa-solid fa-message"></i>
+      </div>
+      <p>By clicking "sumbit" will be send on email of seller <br>(wait 30mins until we respond.)</p>
+      <button class="btn2" type="sumbit">Sumbit</button>
+    </form>
+    <button class="btn" onclick="location.href='index.html'">Back</button>
+  </div>
+</Body>
+</html>
