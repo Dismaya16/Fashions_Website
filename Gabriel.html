@@ -13,6 +13,7 @@
      .navigation{
        background: pink;
        width: 100%;
+       height: 100px;
      }
      body{
        background: url('BG.jpeg');
@@ -23,83 +24,172 @@
        display: flex;
        justify-content: space-between;
        align-items: center;
+       position: relative;
      }
-     .logo a{
-       font-size: 12px;
-       color: white;
+     .navdiv .logo a{
+       font-size:40px;
+       color:white;
        font-weight: bold;
-       margin: 5px;
+       margin-left:10px;
+       position:absolute;
      }
      .navdiv li{
-         margin-right: 10px;
-         display:inline-block
+       display: inline-block;
+       margin-right:20px;      
      }
      .navdiv li a{
        color: white;
-       font-size: 7px;
        font-weight: bold;
+       font-size: 25px;
      }
-     
-     img{
-       margin: 30px;    
-       border-radius: 20px;
-       border: 3px solid white;
-       align-items: center;
+     .navdiv li a:hover{
+       color:black;
+       background:white;
      }
-     button{
-       width:90px;
-       margin-left: -130px;
-       align-items: center;
-       background: pink;
-       color: white;
-       border-radius: 5px;
-       border: 2px solid white;
+     .Menu{
+       display: flex;     
+       flex-wrap: wrap;
+       border: 10px solid pink;
+       height: 125vh;
+       align-content: flex-start;
+       column-gap: 1em;
+       row-gap: 1em;
+       
      }
-     button a{
-       color: white;
-       font-weight: bold;
-     }
-     .navdiv a:hover{
-       background: white;
+     .buttonNav button {
+       width: 400px;
+       height:60px;
+       font-size:45px;
        color: black;
+       background:white;
+       border-radius:10px;
+       border:5px solid pink;
+       font-weight:bold;
+       right: 20%;
+       bottom: 20%;
+       position: absolute;
      }
-  .Menu a:hover{
-    background: white;
-    color: black;
-    width:90px;
-  }
-  .Menu {
-    margin-right: 30px;
-  }
-     
+    .buttonNav button:hover{
+      color:white;
+      background:black;
+    }
+    .Menu img{
+      border-radius: 10px;
+      border: 5px solid pink;
+      position: relative;
+      margin-left: 40px;
+      bottom: -30px;
+      left: 5px;
+    }
+    i a{
+      background: blue;
+      color: white;
+    }
+    .buttonNav{
+      display: flex;
+      justify-content: center;
+      width: 650px;
+      height:200px;
+      background: none;
+      backdrop-filter: blur(20px);
+      right: 16%;
+      bottom: -30%;
+      position: absolute;
+      border-radius: 10px;
+      border: 5px solid white;
+      font-size: 30px;
+    }
   
+    .buttonNav h3{
+      color: green;
+    }      
+    h4{    
+      font-size:35px;
+      color: black;
+    }
+    .line{
+      display: flex;
+      flex-wrap:wrap;
+      column-gap: 4em;
+      row-gap: 13.5em;
+      bottom:-215px;
+      left:60.9px;    
+      text-align: flex-start;
+      position: absolute;
+    }
+  .line h4{
+    border-radius: 5px;
+    border: 5px solid pink;
+    background: white;
+    width: 240.5px;
+  }
+  .buttonNav p{
+    position: absolute;
+    bottom:2px;
+  }
+    
   </style>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' rel='stylesheet'>
 </head>
 <body>
   <nav class="navigation">
     <div class="navdiv">
       <div class="logo"><a href="Gabriel.html">ROJAYNE FASHIONS SHOP</a></div>
       <ul>
+        <br><br>
         <li><a href="Gabriel.html">Home</a></li>
-        <li><a href="table.html">Contact</a></li>
-        <li><a href="Gabriel.html">About</a></li>
-        <li><a href="Gabriel.html">More</a></li>
+        <li><a href="table.html">Contact Us</a></li>
+        <li><a href="https://www.facebook.com/rojayne.donesdismaya/">My Facebook</a></li>
       </ul>
     </div>
   </nav>
-      <h1 align="center"><font color= pink>FASHIONS SHOP</font></h1>
-      <center>
-      <h4><font color=green>(₱50 only each)</font></h4>
-    <div class="Menu">
-      <img src="tsart.jpeg" width="100" height="100"</img>
-      <button><a href="index.html">BUY</a></button>
-      <img src="tsart2.jpeg" width="100" height="100"</img>
-      <button><a href="index.html">BUY</a></button>
-      <img src="tsart3.jpeg" width="100" height="100"</img>
-      <button><a href="index.html">BUY</a></button>
-      <img src="tsart5.jpeg" width="100" height="100"</img>
-      <button><a href="index.html">BUY</a></button>
-      </center>
-    </div>
+      <h1 align="center"><font color= pink font size= 30>FASHIONS SHOP</font></h1>
+    <div class="Menu">            
+              <img src="tsart.jpeg" width="250" height="250"></img>
+              <img src="tsart2.jpeg" width="250" height="250"></img>
+              <img src="tsart3.jpeg" width="250" height="250"></img>
+              <img src="tsart5.jpeg" width="250" height="250"></img>
+              <img src="tsart7.jpeg" width="250" height="250"></img>
+              <img src="tsart8.jpeg" width="250" height="250"></img>
+              <img src="tsart9.jpeg" width="250" height="250"></img>
+              <img src="tsart10.jpeg" width="250" height="250"></img>
+              <img src="tsart11.jpeg" width="250" height="250"></img>
+              <img src="tsart12.jpeg" width="250" height="250"></img>
+              <img src="tsart13.jpeg" width="250" height="250"></img>
+              <img src="tsart14.jpeg" width="250" height="250"></img>
+              <img src="tsart15.jpeg" width="250" height="250"></img>
+              <img src="tsart16.jpeg" width="250" height="250"></img>
+              <img src="tsart17.jpeg" width="250" height="250"></img>
+              <img src="tsart18.jpeg" width="250" height="250"></img>
+              <img src="tsart19.jpeg" width="250" height="250"></img>
+              <img src="tsart20.jpeg" width="250" height="250"></img>
+<div class="line">
+  <h4>Swim Wear A</h4>
+  <h4>Swim Wear B</h4>
+  <h4>Swim Wear C</h4>
+  <h4>Swim Wear D</h4>
+  <h4>Swim Wear E</h4>
+  <h4>Swim Wear F</h4>
+  <h4>Swim Wear G</h4>
+  <h4>Swim Wear H</h4>
+  <h4>Swim Wear I</h4>
+  <h4>Swim Wear J</h4>
+  <h4>Swim Wear K</h4>
+  <h4>Swim Wear L</h4>
+  <h4>Swim Wear X</h4>
+  <h4>Swim Wear N</h4>
+  <h4>Swim Wear O</h4>
+  <h4>Swim Wear P</h4>
+  <h4>Swim Wear Q</h4>
+  <h4>Swim Wear R</h4>
+</div>
+  <div class="buttonNav">
+    <h3>(₱50 only)</h3>
+    <p>Website is made by Gabriel</p>
+    <button onclick="location.href='index.html'">BUY NOW!</button>
+  </div>
+  <div class="endnav">
+    
+  </div>
 </body>
 </html>
